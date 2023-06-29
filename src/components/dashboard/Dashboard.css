@@ -1,0 +1,410 @@
+.dashboard-main-section{
+    /* height: 100vh; */
+    display: flex;
+    padding: 2.5rem;
+    align-items: center;
+    gap: 3.75rem;
+}
+
+
+.dashboard-navigation, .dashboard-small-navigation{
+    align-self: stretch;
+    background-color: var(--black);
+    padding: 3.75rem 3.12rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+.dashboard-navigation>div >h2, .dashboard-small-navigation >div >h2{
+    font-size: 2.25rem;
+    color: var(--whitish);
+    margin-bottom: 3.87rem;
+}
+
+.dashboard-navigation>div >ul,.dashboard-small-navigation>div >ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.62rem;
+}
+
+.dashboard-navigation>div >ul >li,.dashboard-small-navigation>div >ul >li{
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    color: var(--whitish);
+}
+
+.dashboard-small-navigation{
+    display: none;
+}
+
+.nav-last-div{
+    color: var(--whitish);
+}
+
+.nav-icon{
+    display: none;
+}
+
+.nav-icon >img{
+    width: 25px;
+    cursor: pointer;
+}
+
+@media screen and (600px < width <=1100px ) {
+    .dashboard-main-section{
+        padding: 1.5rem;
+        gap: 1.75rem;
+    }
+
+    .recharts-wrapper{
+        width: 100% !important;
+    }
+
+    .recharts-surface{
+        width: 100% !important;
+    }
+}
+
+
+@media screen and (width <= 600px) {
+    .dashboard-main-section{
+        padding: 0.5rem;
+
+        position: relative;
+    }
+
+    .dashboard-navigation{
+        display: none;
+    }
+
+    .dashboard-small-navigation{
+        display: flex;
+        position: absolute;
+        right: 0px;
+        top: 10vh;
+        bottom: 0px;
+        z-index: 2;
+    }
+
+    .recharts-wrapper{
+        width: 100% !important;
+    }
+
+    .recharts-surface{
+        width: 100% !important;
+    }
+
+    
+
+    .chart{
+        padding: 0.87rem 1.4rem !important;
+    }
+
+    .dash-4th-div{
+        flex-direction: column;
+    }
+
+    .nav-icon{
+        display: flex;
+    }
+}
+
+
+
+/* DashBoard */
+.dash-board{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    /* padding: 2rem 0rem; */
+}
+
+.dash-1st-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dash-1st-1st-div{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.search-profile{
+    position: relative;
+}
+
+.search-profile > input{
+    border-radius: 10px;
+    background-color: var(--whitish);
+    padding: 0.40rem;
+    border: none;
+}
+
+.search-profile > img{
+    position: absolute;
+    right: 0.56rem;
+    top: 0.56rem;
+    /* margin-left: -20px; */
+}
+
+.profile-img{
+    border-radius: 50%;
+}
+
+
+
+/* 2nd div */
+.dash-2nd-div{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 2.3rem;
+}
+
+.dash-2nd-div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding: 1.25rem;
+    border-radius: 20px;
+}
+
+.dash-2nd-div > div>img{
+    text-align: end;
+    align-self: flex-end;
+}
+
+.card-amount{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.vector{
+    background-color: var(--light-green);
+}
+
+.totaltransaction{
+    background-color: var(--light-orange);
+}
+
+.likes{
+    background-color: var(--light-pink);
+}
+
+.total-users{
+    background-color: rgba(222, 224, 239, 1)
+}
+
+/* 3rd div i.e chart -----------------*/
+.chart{
+    padding: 1.87rem 2.4rem;
+    background-color: var(--whitish);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.56rem;
+}
+
+.montserrat{
+    font-size: 1.125rem;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+.montserrat + p{
+    font-size: 0.875rem;
+    font-family: Montserrat;
+    color: var(--secondary-text);
+}
+
+.chart>div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-chart-indents{
+    display: flex;
+    align-items: center;
+    gap: 2.19rem;
+}
+
+.main-chart-indents>div{
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+
+/* 4th div ------------------------- */
+.dash-4th-div{
+    display: flex;
+    gap: 2.5rem;
+    /* align-items: center; */
+    /* border-radius: 20px; */
+}
+
+.piechart-div{
+    flex: 1;
+}
+
+.piechart-div>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.piechart-div>div:first-child>p{
+    font-size: 1.125rem;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+.date-arrow{
+    display: flex;
+    gap: 0.31rem;
+    align-items: center;
+}
+
+.date-arrow>p{
+    font-size: 0.75rem;
+    color: var( --secondary-text);
+    font-family: Montserrat;
+}
+
+.date-arrow>img{
+    width: 0.5rem;
+    height: 0.3125rem;
+}
+
+/* pie chart */
+.piechart-div{
+    background-color: var(--whitish);
+    padding: 1.88rem 2.5rem 0rem 2.5rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.pie-chart-2nd-div{
+    display: flex;
+    gap: 1rem;
+}
+
+.piee{
+    margin-left: -2.5rem;
+}
+
+.piee>svg{
+    transform: rotate(-75deg);
+}
+
+.opposite-pie-chart{
+    display: flex;
+    flex-direction: column;
+    gap: 2.88rem;
+    align-items: flex-start;
+    
+}
+
+.indents{
+    display: flex;
+    gap: 0.62rem;
+    align-items: baseline;
+}
+
+.indents>div>p:first-child{
+    font-size: 0.875rem;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+.indents>div>p:last-child{
+    font-size: 0.75rem;
+    color: var(--secondary-text);
+    font-family: Lato;
+}
+
+/* schedule div */
+
+.schedule-div{
+    background-color: var(--whitish);
+    padding: 1.88rem 2.5rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.56rem;
+    flex: 1;
+}
+
+.schedule-div>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule-div>div:first-child>p{
+    font-size: 1.125rem;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+
+.schedule-div >ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 0.81rem;
+    flex: 1;
+}
+
+.schedule-div >ul>li{
+    display: flex;
+    /* justify-self: stretch; */
+    flex: 1;
+    gap: 0.94rem;
+}
+
+.schedule-div >ul>li>div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.vertical-div{
+    width: 0.3125rem;
+}
+
+.vertical-green{
+    background-color: var(--vertical-green);
+}
+
+.vertical-purple{
+    background-color: var(--vertical-purple);
+}
+
+.schedule-task{
+    font-size: 0.875rem;
+    font-family: Lato;
+    font-weight: 700;
+    color: var(--color-102);
+}
+
+.time-place{
+    font-size: 0.75rem;
+    font-family: Lato;
+    color: var(--grayish);
+}
+
+

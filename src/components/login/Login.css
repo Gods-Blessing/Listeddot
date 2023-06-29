@@ -1,0 +1,139 @@
+
+.flexing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-main-section{
+    height: 100vh;
+    display: flex;
+}
+
+/* first div  */
+.first-div{
+    flex: 1;
+    /* width: 36.75rem; */
+    background-color: var(--black);
+    flex-shrink: 0;
+}
+
+.first-div >p{
+    font-size: 4.5rem;
+    color: var(--whitish);
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+
+
+/* second div */
+
+.second-div{
+    flex: 2;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+/* .second-div>div{
+    background-color: gray;
+} */
+
+.second-inner-div > div:first-child > p:first-child{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.second-inner-div > div:first-child > p:last-child{
+    font-size: 1rem;
+    font-family: Lato;
+    font-weight: 800;
+}
+
+.signing-methods{
+    margin: 20px 0px ;
+    display: flex;
+    gap: 1.56rem;
+}
+
+.signing-methods > div{
+    padding: 0.5rem 1.19rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.62rem;
+    background-color: var(--whitish);
+    border-radius: 10px;
+}
+
+.signing-methods > div>span{
+    font-size: 0.75rem;
+    color: var(--secondary-text);
+}
+
+.signing-form{
+    /* width: 24.0625rem;
+    height: 19.8125rem; */
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--whitish);
+    padding: 1.87rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    
+}
+
+.signing-form >div{
+    display: flex;
+    flex-direction: column;
+}
+
+.signing-form >div>label{
+    font-family: Lato;
+    margin-bottom: 0.62rem;
+}
+
+.signing-form >div>input{
+    border-radius: 10px;
+    padding: 0.69rem 0.94rem;
+    border: none;
+    background-color: var(--background-color);
+}
+
+.forgot-password{
+    font-family: Lato;
+    color: var(--link-color);
+}
+
+
+.singin-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.58rem 0rem;
+    color: var(--whitish);
+    background-color: var(--black);
+    font-family: Montserrat;
+    border-radius: 0.625rem;
+}
+
+.to-signin{
+    display: flex;
+    text-decoration: none;
+    color: var(--whitish);
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+
+.register-line{
+    text-align: center;
+    color: var(--secondary-text);
+    margin-top: 1.25rem;
+}
+
+.register-line>span{
+    color: var(--link-color);    
+}
+
